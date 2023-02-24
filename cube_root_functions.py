@@ -32,13 +32,13 @@ class CubeRootFunctions:
 
 	def plot_and_show_graph(self):
 		""" Plot and display graph."""
-		x = np.linspace(-10, 10, 50)
+		x = np.linspace(-20, 20, 50)
 		y = self.a*np.cbrt((self.c*x) - self.h) + self.k
 		crf = CubeRootFunctions(self.a, self.c, self.h, self.k)
 		crf.style_graph()
 		plt.title(f"Graph of y = ({self.a}* cbrt({self.c}x - {self.h})) + "
 				f"{self.k}", c='red', fontsize=12, fontweight='bold')
-		plt.plot(x, y, color='red', marker='o')
+		plt.plot(x, y, color='red')
 		plt.text(min(x), max(y), 
 				f"Inflection point: ({self.h}, {self.k})", c='b')
 		plt.show()
