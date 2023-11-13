@@ -11,7 +11,7 @@ class CubeRootFunctionsLoop(CubeRootFunctions):
 
 
 	def main_loop(self):
-		""""""
+		"""Main program loop"""
 		while True:
 			self.a = input("Enter a: ")
 			if self.a == 'q' or self.a == 'Q':
